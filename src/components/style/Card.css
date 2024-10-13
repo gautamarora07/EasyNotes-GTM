@@ -1,0 +1,127 @@
+:root{
+    --br : 1px solid red;
+    --bb : 1px solid blue;
+}
+
+
+.card-container{
+ 
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    padding: 1rem;
+ 
+}
+
+.card{  
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.face{
+    height: 200px;
+    width: 200px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    position: relative;
+}
+
+.face2
+{    overflow: hidden;
+    transform: translateY(-200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin :0 auto;
+    color : var(--primary-color);
+    background-color: whitesmoke ;
+    font-size: 2rem;  
+}
+
+
+.face1
+{
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+/* #6157FF #EE49FD*/
+.card:hover .face2
+{
+    transform: translateY(-250px);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: none;
+    font-size: 1rem;
+    padding-top: 2rem;
+}
+
+.card:hover .face1
+{
+  opacity: 1;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  font-weight: bold;
+  clip-path: circle(100%);
+  padding-top: 2rem;
+}
+
+.exm{
+    margin-top: 1.2rem;
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.9;
+}
+
+.exm:hover{
+      opacity: 1;
+}
+
+.exmLink
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width:400px) {
+
+
+.card{  
+
+    margin: 1.2rem auto;
+    margin-bottom: 2rem;   
+}
+
+.card:hover .face2
+{
+    transform: translateY(-250px);
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    box-shadow: none;
+    font-size: 0.9rem;
+    padding-top: 2rem;
+}
+    
+}

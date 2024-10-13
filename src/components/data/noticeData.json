@@ -1,0 +1,30 @@
+{
+    "notices" : [
+        {
+          "id": 1,
+          "head": "Exam Schedule", 
+          "desc": "(Exam Schedule)"
+        },
+        {
+          "id": 2,
+          "head": "Assignment",
+          "desc": "Submission date -  /  /  . Lorem ipsum dolor sit amet,stinctio mollitia modi officia quaerat eius quibusdam minima magnam ab esse earum explicabo ipsam doloremque blanditiis, suscipit excepturi. Exercitationem, molestiae."
+        },
+        {
+          "id": 3,
+          "head": "Lab Manual",
+          "desc": "PDF File and instructions"
+        },
+        {
+          "id": 4,
+          "head": "Notes",
+          "desc": "Random Description 4"
+        },
+        {
+          "id": 5,
+          "head": "Examination form Submission",
+          "desc": "Random Description 5"
+        }
+      ]
+      
+}

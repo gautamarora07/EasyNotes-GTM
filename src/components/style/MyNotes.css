@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+.myNotes-section
+{
+    
+    background-color: #f1f1f1;
+    margin: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
+}
+
+.notes-msg{
+    text-align: center;
+    font-size: 1rem;
+    color : gray;
+    letter-spacing : 3px;
+}
+
+.notes-heading
+{
+    padding: 1rem;
+   background:  var(--primary-color)  ;
+    font-size: 3rem;
+    text-align: center;
+    color : white;
+    border-radius: 15px 15px 0 0;
+    letter-spacing: 3px;
+    font-family: 'Times New Roman', Times, serif;
+  
+}
+
+
+
+.inp-title 
+{
+    margin: 1rem auto 2px;
+   
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+    outline: none;
+    border : none;
+    color : var(--primary-color);
+    font-size: 1rem;
+    width: 90%;
+
+  
+}
+
+
+
+.inp-desc
+{
+    width: 90%;
+    height: 9rem;
+    margin-top: 0;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+    outline: none;
+    border : none;
+    font-size: 1rem;
+    resize: none;
+    color : var(--primary-color);
+
+}
+.btn-add
+{
+    width: 4rem;
+    height:3rem;
+    background-color: var(--primary-color);
+    color : white;
+    font-size: 1rem;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border-radius: 10px;
+    outline:none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.notes-container
+{
+    margin-top : 2rem;
+    padding: 1rem;
+}
+
+
+/*-----------------------------------NOTE--------------------------------------------*/
+
+
+
+.note-card
+{
+    background: #fff;
+    
+    border-radius: 15px;
+    box-shadow: 0 0 15px gray;
+   
+    width: 18rem;
+    height: auto;
+    margin: 1rem;
+    display: inline-block;
+}
+.btn-del
+{
+    height: 2rem;
+    width: 2rem;
+    background: none;
+    border: none;
+    outline: none;
+    color :#efe ;
+    font-weight: 900;
+    cursor:pointer;
+}
+
+.btn-del:hover{
+    color: white;
+}
+
+.note-title
+{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-family: 'Protest Riot', sans-serif;
+    padding:0.5rem 1rem;
+    color  :  white;
+    background: var(--primary-color);
+    border-radius : 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.note-desc
+{
+    padding:0.8rem 1rem;
+    font-size: 0.9rem;
+    text-align: justify;
+    font-family: 'Protest Riot', sans-serif;
+    color : var(--primary-color);
+    white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width : 400px)
+{
+    .myNotes-section
+    {
+        margin: 1rem auto;
+        width: 96%;
+    }
+    .notes-msg
+    {
+        font-size: 0.7rem;    
+    }
+
+    .notes-heading
+    {
+        font-size: 2rem;
+    }
+
+    .inp-title
+    {
+        padding: 0.8rem;
+         font-size:0.8rem;
+         width: 98%;
+         letter-spacing: 1px;
+
+    }
+    .inp-desc
+    {
+        width: 98%;
+        padding: 0.8rem;
+        font-size: 0.8rem;
+        height: 7rem;
+        position: relative;
+    }
+
+    form
+    {
+        position: relative;
+    }
+
+    
+.note-card
+{
+       
+    width: 100%;
+    margin: 1rem auto; 
+}
+.btn-del
+{
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.note-title
+{    font-size: 1rem;
+    padding:0.3rem 1rem;
+    
+
+}
+
+.note-desc
+{
+    padding:0.6rem 1rem;
+    font-size: 0.8rem;
+  
+}
+
+}

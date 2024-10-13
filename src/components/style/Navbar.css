@@ -1,0 +1,264 @@
+.header-container
+{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    z-index: 10;
+    top : 0; right: 0;
+    background: var(--bg-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width : 97vw;
+    align-items: center;
+    margin: 0.7rem auto 0.2rem;
+    padding: 0.3rem 0.8rem ;
+    background-color: var(--nav-bgcolor);
+    color: var(--ft-color);
+    border-radius: 10px;
+    border: 0.8px solid var(--primary-color);
+    box-shadow : 0 0 10px 1px gray;
+    position :relative;
+    
+    
+}
+
+.active
+{
+    background-color: var(--primary-color);
+    color: white !important;
+    border-radius: 15px;
+}
+
+
+.head_logo
+{
+    padding: 0.3rem;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#heart
+{
+    color: red;
+    animation : pulse 2s infinite ease-in-out;
+    margin-right: 0.3rem;
+}
+
+.logo_item
+{
+    text-decoration: none;
+    color: var(--ft-color);
+    font-size: 1.3rem;
+    
+}
+.head_options
+{
+    padding: 0.5rem;
+    padding-right: 4rem;
+    display : flex;
+
+}
+
+.head_item
+{
+    text-decoration: none;
+    color: var(--ft-color);
+    margin :0 1rem;
+    padding: 0.2rem 0.4rem;
+    text-align: center;
+    cursor : pointer;
+}
+
+.menu_icon
+{ 
+    position : absolute;
+    top : 0rem; right :0.5rem;
+    color: var(--ft-color);
+    margin :0 1rem;
+    padding: 1rem 0.4rem 2rem;
+    
+    text-align: center;
+    cursor : pointer;
+}
+
+.menu_icon:hover + .menu, .menu:hover{
+    display: flex;
+}
+.menu::before
+{
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    z-index: 2;
+    top: -12px; right: 2rem;
+    transform: rotate(45deg);
+    background: var(--nav-bgcolor);
+    border-bottom : 0.8px solid var(--primary-color);
+    border-right : 0.8px solid var(--primary-color);
+
+}
+.menu
+{
+    display: none;
+    width: 18%;
+    position: absolute;
+    top : 3.6rem;
+    right :5px;
+    z-index: 3;    
+   
+       
+}
+ 
+
+
+@keyframes pulse{ 
+    0% { 
+        transform:  scale(1); 
+        opacity: 0; 
+    }
+    25% { 
+        transform:  scale(1.01); 
+        opacity: 1; 
+    }
+    50% { 
+        transform:  scale(1.03); 
+        opacity: 1; 
+    }
+    75% { 
+        transform:  scale(1.01); 
+        opacity: 1; 
+    }
+    100% { 
+        transform:  scale(1); 
+        opacity: 1; 
+    } 
+} 
+
+
+
+.bars
+{
+    display : none;
+    flex-direction : column;
+    justify-content:center;
+    align-items:center;
+   position: absolute;
+   top:0.3rem; right : 0.3rem;
+    border-radius:50%;
+    height:40px;
+    width:40px;
+   
+    gap : 4px;
+    cursor: pointer;
+}
+
+.bar{
+    width : 20px;
+    height:2px;
+    background-color: var(--primary-color);
+  border : 1px solid var(--primary-color);
+}
+
+.open
+{
+    display: flex;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 400px) 
+{
+.bars{
+    display: flex;
+}
+header{
+        flex-direction: column;
+        align-items: flex-start;
+}
+.active
+{
+    background-color: var(--primary-color);
+    color: white !important;
+    border-radius: 8px;
+}
+.head_logo{
+    justify-content: flex-start;
+}
+.head_options{
+       
+        display:none;
+        flex-direction: column;
+        width:  100%;
+        gap : 3px;
+        padding: 0.2rem;
+ 
+        border-top:1px solid var(--primary-color);
+}
+
+.open
+{
+    display: flex;
+}
+.head_item{
+        width: 100%;
+        margin: 0;
+    }
+    
+.head_item:hover{
+        background-color: var(--primary-color);
+        color : white;
+        border-radius: 8px;
+    }
+.menu_icon
+    {
+        position: relative;
+        border-radius: 8px;
+        margin: 0 auto;
+        padding: 0.2rem 0.4rem;
+    
+        width: 100%;
+    }
+   
+.menu_icon::after 
+    {
+        content: '';
+        height: 0.5rem;
+        width: 0.5rem;
+        
+        position: absolute;
+        z-index: 2;
+        top: 9px; 
+        margin-left: 1rem;
+        transform: rotate(45deg);
+        background: var(--nav-bgcolor);
+        border-bottom : 1px solid var(--primary-color);
+        border-right : 1px solid var(--primary-color);
+    }
+
+/* .menu_icon:hover::after ,  */
+/* .menu:hover ~ .menu_icon::after
+{
+    transition: 0.5s;
+    transform: rotate(225deg);
+} */
+
+.menu
+{
+    position: relative;
+    top:0;right: 0; left: 0;
+   width: 100%;
+}
+
+.menu::before
+{
+    display: none;
+    background-color: var(--primary-color);
+}
+}

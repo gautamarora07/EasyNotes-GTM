@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=Kalam:wght@300;400;700&family=Lobster&family=REM:wght@200;300&family=Roboto+Slab:wght@500&display=swap');
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+   
+}
+
+body
+{
+    background: linear-gradient(120deg,  #3d5a8050,#ee6c4d50, #98c1d950, #e0fbfc50 );
+    backdrop-filter: blur(100px);
+    height: 100vh;
+}
+/*----------------------------------------------------------------------NAV BAR---------------------------------------------------------------------------------*/
+
+.active
+{
+    border-radius: 20px;
+}
+
+header {
+
+    display : flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 0.8rem;
+    margin : 0.5rem;
+    /* position: sticky;
+    top : 0;
+    z-index: 1000; */
+}
+
+#logo
+{
+    width: 10%;
+    font-size: 1.5rem;
+    color: darkslateblue;
+    font-weight: 900;
+    padding-left: 0.5rem;
+}
+
+#heart
+{
+    color :red;
+    padding-right: 0.4rem;
+    animation: pulse 2s linear infinite; 
+}
+
+
+#items
+{     
+    width: 90%;
+    text-align: right; 
+    padding-right: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+}
+
+.item_a{
+    height: 1.5rem;
+    margin-left: 2rem;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+
+.item_a:not(.active):hover{
+    color : magenta;
+    background-color: rgba(71, 61, 139, 0.034);
+    border-radius: 20px;
+}
+
+
+
+/*----------------------------------------------------------------------HOME---------------------------------------------------------------------------------*/
+.container
+{
+    height : 85vh;
+    width: 96vw;
+    margin : 1rem;
+    /* padding: 0.5rem; */
+    /* box-shadow : 1px 1px 0.5px gray; */
+    border-radius: 20px;
+    overflow : hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   border:2px dashed black;
+
+}
+
+#LBtnDiv, #RBtnDiv
+{
+    width: 5%;
+}
+
+#Larrow , #Rarrow
+{
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px gray;
+    color: darkslateblue;
+    font-weight: bolder;
+}
+
+.SlideDataDiv
+{
+    border: 1px solid blue;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+}
+.slides
+{
+    height : 80vh;
+   min-width : 85vw;
+   margin: 0.5rem; 
+   padding: 0.5rem;
+   text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px gray;
+    /* border : 2px solid black; */
+    border-radius : 20px;
+    
+
+}
+
+
+.slides img{
+    
+    border: 5px solid yellow;
+
+    width: 70vw;
+    height: 75vh;
+    border-radius: 20px;
+
+}
+
+/* .slide{
+}*/
+
+@keyframes slide {
+    from {
+      transform: translateX(-15px);
+    }
+    to {
+      transform: translateX(-25px);
+    }
+  } 
+
+/*----------------------------------------------------------------------FEATURES---------------------------------------------------------------------------------*/
+#Feature
+{
+    height: 85vh;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    /* box-shadow: 5px 5px 10px grey; */
+    border-radius: 10px;
+}
+
+#FeatureL, #FeatureR
+{
+    height : 95%;
+    width: 50%;
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.377);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+    /* position: relative; */
+}
+
+#FeatureL
+{
+    background: url(https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5916.jpg);
+
+}
+
+#LDiv
+{
+    width : 50%;
+    height: auto;
+    margin:2rem auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.226);
+    border-radius: 10px;
+    object-fit: cover;
+    text-align: center;
+    font-family: roboto;
+    font-size : 1.5rem;
+    color : white;
+    font-weight : 600;
+    text-shadow: 2px 2px 10px black;
+    gap : 20;
+
+}
+
+#LPara
+{
+    padding-top: 0.5rem;
+    text-align: justify;
+    color : white;
+    font-size: 0.9rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+#FeatureL button
+{
+    margin-top: 10rem;
+    color : red;
+}
+
+footer {
+    
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border : 1px solid red;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  
+  }
+
+ 
+  @keyframes pulse{ 
+    0% { 
+        transform:  scale(1); 
+        opacity: 0; 
+    }
+    25% { 
+        transform:  scale(1.01); 
+        opacity: 1; 
+    }
+    50% { 
+        transform:  scale(1.03); 
+        opacity: 1; 
+    }
+    75% { 
+        transform:  scale(1.01); 
+        opacity: 1; 
+    }
+    100% { 
+        transform:  scale(1); 
+        opacity: 1; 
+    } 
+} 
+
+/* .slider {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    width: 70vw;
+    height: 60vh;
+    border-radius: 10px;
+  }
+  
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 100;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 100;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }
+   */

@@ -1,0 +1,29 @@
+
+{
+    "slides" : [
+        {
+            "src" : "images/Welcome.png",
+            "alt" : "This is image 1."
+        } ,
+        {
+            "src" : "images/Notices.png",
+            "alt" : "This is image 2."
+        } ,
+        {
+            "src" : "images/Library.png",
+            "alt" : "This is image 3."
+        },
+        {
+            "src" : "images/PYQs.png",
+            "alt" : "This is image 1."
+        } ,
+        {
+            "src" : "images/Notes.png",
+            "alt" : "This is image 2."
+        } ,
+        {
+            "src" : "images/Soon.png",
+            "alt" : "This is image 3."
+        } 
+    ]
+}

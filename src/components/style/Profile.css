@@ -1,0 +1,40 @@
+.profile
+{
+    display: flex;
+    justify-content : space-between;
+    align-items: center;
+    padding:1rem 0.5rem 0.7rem;
+    background-color: var(--primary-color);
+    border-radius: 10px 10px 1px 1px;
+    width:100%;
+  
+}
+
+.prof_pic
+{
+    border: 3px solid var(--bg-color);
+    background-color: antiquewhite;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+ 
+}
+
+.prof_name
+{
+    
+    margin: .8rem;
+  
+    text-align: center;
+   
+}
+
+@media  screen and (max-width:400px) {
+    .profile{
+        flex-direction: column;
+        box-shadow: 0 0 10px 500px rgba(0,0,0,.3);
+        
+    border-radius: 15px;
+    width: 95%;
+    }
+}

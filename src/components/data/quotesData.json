@@ -1,0 +1,87 @@
+{
+    "quotes"   : [
+        {
+            "text": " A room without books is like a body without a soul.",
+            "author" : "- Marcus Tullius Cicero"
+        },
+        {
+            "text": "You can never get a cup of tea large enough or a book long enough to suit me.",
+            "author" : "- C.S. Lewis"
+        },
+        {
+            "text":"A book is a dream that you hold in your hand.",
+            "author" : "- Neil Gaiman"
+        },
+        {
+            "text": " The more that you read, the more things you will know. The more that you learn, the more places you'll go.",
+            "author" : "- Dr. Seuss"
+        },
+        {
+            "text": " A reader lives a thousand lives before he dies. The man who never reads lives only one.",
+            "author" : "- George R.R. Martin"
+        },
+        {
+            "text":" Books are the plane, and the train, and the road. They are the destination and the journey. They are hom.",
+            "author" : "- Anna Quindlen"
+        },
+        {
+            "text": "Reading gives us someplace to go when we have to stay where we are.",
+            "author" : "- Mason Cooley"
+
+        },
+        {
+            "text": "I have always imagined that Paradise will be a kind of library. ",
+            "author" : "- Jorge Luis Borges"
+        },
+        {
+            "text":"The only thing you absolutely have to know is the location of the library. ",
+            "author" : "- Albert Einstein"
+        },
+        {
+            "text":"Books are a uniquely portable magic. ",
+            "author" : "- Stephen King"
+        },
+        {
+            "text": " A room without books is like a body without a soul.",
+            "author" : "- Marcus Tullius Cicero"
+        },
+        {
+            "text": "You can never get a cup of tea large enough or a book long enough to suit me.",
+            "author" : "- C.S. Lewis"
+        },
+        {
+            "text":" A book is a dream that you hold in your hand.",
+            "author" : "- Neil Gaiman"
+        },
+        {
+            "text": " The more that you read, the more things you will know. The more that you learn, the more places you'll go.",
+            "author" : "- Dr. Seuss"
+        },
+        {
+            "text": " A reader lives a thousand lives before he dies. The man who never reads lives only one.",
+            "author" : "- George R.R. Martin"
+        },
+        {
+            "text":" Books are the plane, and the train, and the road. They are the destination and the journey. They are hom.",
+            "author" : "- Anna Quindlen"
+        },
+        {
+            "text": " Reading gives us someplace to go when we have to stay where we are.",
+            "author" : "- Mason Cooley"
+
+        },
+        {
+            "text": "I have always imagined that Paradise will be a kind of library. ",
+            "author" : "- Jorge Luis Borges"
+        },
+        {
+            "text":"The only thing you absolutely have to know is the location of the library. ",
+            "author" : "- Albert Einstein"
+        },
+        {
+            "text":"Books are a uniquely portable magic. ",
+            "author" : "- Stephen King"
+        }
+    ]
+
+}
